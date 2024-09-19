@@ -1,0 +1,89 @@
+.contenedor
+{
+    background-color:orange;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr 1fr 1fr;
+    grid-template-areas:"header header header"
+                        "nav nav nav"
+                        "section section2 ads"
+                        "foot foot foot"
+                        "rrss1 rrss2 rrss3"
+
+    ;
+}
+
+.contenedor .header
+{
+    background-color: yellow;
+    grid-column: header;
+}
+.contenedor .nav
+{
+    background-color: bisque;
+    grid-column: nav;
+}
+.contenedor .section
+{
+    background-color:blue;
+    
+    grid-column: section;
+}
+.contenedor .section2
+{
+    background-color: blue;
+    
+    grid-column: section2;
+}
+.contenedor .ads
+{
+    background-color:red;
+    text-align: center;
+    padding: 10px;
+    font-size: 23px;
+    display: grid;
+    grid-template-areas: "hijoads";
+    grid-column: ads;
+}
+.contenedor .ads .hijoads
+{
+    background-color: rgb(2, 66, 2);
+    display: grid;
+    
+    grid-column: hijoads;
+}
+.contenedor .foot
+{
+    background-color:green;
+    grid-column: foot;
+}
+.contenedor .rrss
+{
+    background-color: rgb(80, 80, 177);
+    text-align: center;
+    padding: 10px;
+    font-size: 23px;
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:"hijorrss";
+    grid-column: rrss;
+}
+.contenedor .rrss1 
+{
+    background-color: rgb(88, 19, 19);
+    grid-column: rrss1;
+}
+.contenedor .rrss2 
+{
+    background-color: rgb(88, 19, 19);
+    grid-column: rrss2;
+}.contenedor .rrss3 
+{
+    background-color: rgb(88, 19, 19);
+    grid-column: rrss3;
+}
